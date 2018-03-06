@@ -1,0 +1,4 @@
+
+select.form-control:not([size]):not([multiple]) {
+  height: auto;
+}

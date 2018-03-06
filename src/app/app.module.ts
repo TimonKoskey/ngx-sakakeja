@@ -3,12 +3,27 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+
+import { PropertyListComponent } from './property/property-list/property-list.component';
+import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import { SharedModule } from './shared/shared.module';
+
+import {AppRoutingModule} from './app-routing/app-routing.module';
+import { LandingPageModule} from './landing-page/landing-page.module';
+import {AuthModule} from './auth/auth.module';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PropertyListComponent,
+    PropertyDetailComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    AuthModule,
+    LandingPageModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

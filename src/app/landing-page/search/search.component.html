@@ -1,0 +1,28 @@
+<div class="page-header">
+  <div class="page-header-image page-header-small" data-parallax="true" style="background-image:url('../../../assets/img/house-2608548_1920.jpg')"></div>
+  <div class="container">
+    <div class="col-md-4 content-center">
+      <div class="card card-signup card-plain">
+        <div class="card-header align-content-center">
+          <h5 class="card-title">Find a place to call Home</h5>
+          <ul class="nav justify-content-center nav-tabs nav-tabs-info nav-fill" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" role="tablist" data-toggle="tab" href="#rentForm" style="color:white">Rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" role="tablist" data-toggle="tab" href="#buyForm" style="color:white">Buy</a>
+            </li>
+          </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" role="tabpanel" id="rentForm">
+                  <app-search-form (searchParams)="searchPropertyForRent($event)"></app-search-form>
+              </div>
+              <div class="tab-pane fade" role="tabpanel" id="buyForm">
+                  <app-search-form (searchParams)="searchPropertyForSale($event)"></app-search-form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
